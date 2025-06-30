@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimaIA - Protegendo a Vida Animal com Inteligência Artificial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f5ff 0%, #fffbe7 100%);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #6a0dad 60%, #ffd600 100%);
+            color: white;
+            padding: 40px 0 20px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 16px rgba(106,13,173,0.15);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 8px #6a0dad44;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            background: #fffbe7;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px #ffd60033;
+            margin: -30px auto 30px auto;
+            max-width: 900px;
+            padding: 30px 30px 20px 30px;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .intro-text {
+            flex: 2;
+            min-width: 250px;
+        }
+
+        .intro-imgs {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .pet-img {
+            border-radius: 12px;
+            box-shadow: 0 2px 8px #6a0dad22;
+            width: 120px;
+            height: 90px;
+            object-fit: cover;
+            background: #fff;
+            border: 3px solid #ffd600;
+            transition: transform 0.4s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .pet-img:hover {
+            transform: scale(1.13) rotate(-3deg);
+            box-shadow: 0 6px 24px #6a0dad44;
+            border-color: #6a0dad;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        h2 {
+            color: #6a0dad;
+            margin-bottom: 12px;
+            font-size: 2rem;
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            background: linear-gradient(90deg, #e0d4f7 80%, #fffbe7 100%);
+            padding: 16px;
+            border-left: 6px solid #ffd600;
+            border-radius: 8px;
+            box-shadow: 0 1px 6px #6a0dad11;
+        }
+
+        .ong-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: 18px;
+        }
+
+        .ong-card {
+            background: #fff;
+            border: 2px solid #e0d4f7;
+            border-radius: 10px;
+            padding: 14px 18px;
+            min-width: 220px;
+            box-shadow: 0 2px 8px #ffd60022;
+            transition: transform 0.2s;
+        }
+        .ong-card:hover {
+            transform: translateY(-4px) scale(1.03);
+            border-color: #ffd600;
+        }
+        .ong-card a {
+            color: #6a0dad;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .ong-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #6a0dad 60%, #ffd600 100%);
+            color: white;
+            text-align: center;
+            padding: 18px 0;
+            margin-top: 50px;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 700px) {
+            .intro {
+                flex-direction: column;
+                padding: 18px 8px;
+            }
+            .intro-imgs img {
+                width: 90px;
+                height: 70px;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AnimaIA</h1>
+    <p>Inteligência Artificial para a Proteção Animal</p>
+</header>
+
+<div class="intro">
+    <div class="intro-text">
+        <h2>Por que criar a AnimaIA?</h2>
+        <p>
+            A crescente ameaça aos animais devido a desastres ambientais, abandono e ações humanas exige soluções inovadoras. A AnimaIA nasce para unir tecnologia e compaixão, utilizando inteligência artificial para monitorar, proteger e salvar vidas de cães, gatos e outras espécies em risco. Com a IA, podemos agir mais rápido, prevenir tragédias e apoiar ONGs e comunidades na missão de preservar a biodiversidade e garantir um futuro melhor para todos os seres vivos.
+        </p>
+    </div>
+    <div class="intro-imgs">
+        <img class="pet-img" src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=400&q=80" alt="Filhote de cachorro">
+        <img class="pet-img" src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&w=400&q=80" alt="Filhote de gato">
+    </div>
+</div>
+
+<main>
+    <section>
+        <h2>1. Qual problema a IA irá resolver?</h2>
+        <div class="highlight">
+            <p>A AnimaIA busca resolver o problema do resgate e monitoramento de animais em situação de risco, com foco em:</p>
+            <ul>
+                <li><strong>Ameaças ambientais</strong> como incêndios e enchentes.</li>
+                <li><strong>Abandono de animais</strong> em parques e áreas urbanas.</li>
+                <li><strong>Caça ilegal e tráfico</strong> em áreas protegidas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. Como a IA funcionaria para resolver esse problema?</h2>
+        <div class="highlight">
+            <ul>
+                <li><strong>Visão computacional:</strong> Câmeras inteligentes detectam espécies e comportamentos suspeitos.</li>
+                <li><strong>Sensores ambientais:</strong> Identificação de emergências como incêndios e alagamentos.</li>
+                <li><strong>Aprendizado de máquina:</strong> Previsão de riscos com base em dados históricos.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Quais dados a IA precisaria?</h2>
+        <div class="highlight">
+            <ul>
+                <li><strong>Dados geográficos:</strong> Mapeamento e movimentação de animais.</li>
+                <li><strong>Dados ambientais:</strong> Clima, temperatura e condições do solo.</li>
+                <li><strong>Histórico de avistamentos:</strong> Padrões migratórios e hábitos alimentares.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Benefícios da solução</h2>
+        <div class="highlight">
+            <ul>
+                <li><strong>Para os animais:</strong> Resgate rápido e proteção de espécies.</li>
+                <li><strong>Para as pessoas:</strong> Alertas para ONGs, autoridades e comunidades.</li>
+                <li><strong>Para o planeta:</strong> Preservação da biodiversidade e combate a impactos ambientais.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. Desafios éticos e técnicos</h2>
+        <div class="highlight">
+            <p><strong>Éticos:</strong> Garantir que a IA respeite os habitats naturais e a privacidade das pessoas.</p>
+            <p><strong>Técnicos:</strong> Precisão na identificação de animais e integração entre sensores e câmeras em condições adversas.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>ONGs que cuidam de cães e gatos</h2>
+        <div class="ong-list">
+            <div class="ong-card">
+                <strong>Ampara Animal</strong><br>
+                <a href="https://amparanimal.org.br/" target="_blank">https://amparanimal.org.br/</a>
+            </div>
+            <div class="ong-card">
+                <strong>Instituto Luisa Mell</strong><br>
+                <a href="https://www.luisamell.com.br/" target="_blank">https://www.instagram.com/institutoluisamelloficial/</a>
+            </div>
+            <div class="ong-card">
+                <strong>Adote Um Focinho</strong><br>
+                <a href="https://adoteumfocinho.com.br/" target="_blank">http://www.adoteumfocinho.com.br/</a>
+            </div>
+            <div class="ong-card">
+                <strong>Projeto Segunda Chance</strong><br>
+                <a href="https://projetosegundachance.com.br/" target="_blank">https://projetosegundachance.org.br//</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 AnimaIA - Por um futuro melhor para os animais e o planeta</p>
+</footer>
+
+</body>
+</html>
